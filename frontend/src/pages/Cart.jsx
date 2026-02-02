@@ -22,7 +22,7 @@ const Cart = () => {
   const navigate=useNavigate()
   const dispatch = useDispatch()
 
-  const API = "https://full-stack-e-commerce-platform-hy20.onrender.com/cart"
+  const API = "https://full-stack-e-commerce-platform-hy20.onrender.com/api/v1/cart"
   const accessToken=localStorage.getItem("accessToken")
 
   const loadCart = async()=>{

@@ -15,7 +15,7 @@ const AdminUsers = () => {
     const accessToken = localStorage.getItem("accessToken");
 
     try {
-      const res = await axios.get("https://full-stack-e-commerce-platform-hy20.onrender.com/user/all-user",{
+      const res = await axios.get("https://full-stack-e-commerce-platform-hy20.onrender.com/api/v1/user/all-user",{
         headers:{
           Authorization:`Bearer ${accessToken}`
         }

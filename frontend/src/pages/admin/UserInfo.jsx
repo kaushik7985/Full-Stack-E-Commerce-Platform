@@ -57,7 +57,7 @@ const UserInfo = () => {
                     formData.append("file",file) //image file for backend multer
                   }
 
-                  const res=await axios.put(`https://full-stack-e-commerce-platform-hy20.onrender.com/user/update/${userId}`,formData,{
+                  const res=await axios.put(`https://full-stack-e-commerce-platform-hy20.onrender.com/api/v1/user/update/${userId}`,formData,{
                     headers:{
                       Authorization:`Bearer ${accessToken}`,
                       "Content-Type":"multipart/form-data"
@@ -78,7 +78,7 @@ const UserInfo = () => {
 
     const getUserDetails = async () =>{
       try {
-        const res = await axios.get(`https://full-stack-e-commerce-platform-hy20.onrender.com/user/get-user/${userId}`)
+        const res = await axios.get(`https://full-stack-e-commerce-platform-hy20.onrender.com/api/v1/user/get-user/${userId}`)
         if(res.data.success){
           setUpdateUser(res.data.user)
         }

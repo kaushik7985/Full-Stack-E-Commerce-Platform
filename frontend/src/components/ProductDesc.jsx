@@ -8,7 +8,7 @@ const ProductDesc = ({product}) => {
   const accessToken=localStorage.getItem("accessToken")
   const addToCart = async(productId)=>{
     try {
-      const res = await axios.post('https://full-stack-e-commerce-platform-hy20.onrender.com/cart/add',{productId},{
+      const res = await axios.post('https://full-stack-e-commerce-platform-hy20.onrender.com/api/v1/cart/add',{productId},{
         headers:{
           Authorization:`Bearer ${accessToken}`
         }
