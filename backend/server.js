@@ -28,7 +28,7 @@ app.use('/api/v1/orders', orderRoute)
 //https://full-stack-e-commerce-platform-hy20.onrender.com/api/v1/user/register
 
 app.use(express.static(path.join(_dirname, "frontend/dist")));
-app.get("*", (_, res)=>{
+app.get(/^(?!\/api).*/, (_, res)=>{
     res.sendFile(path.resolve(_dirname, "frontend","dist", "index.html"))
 })
 
