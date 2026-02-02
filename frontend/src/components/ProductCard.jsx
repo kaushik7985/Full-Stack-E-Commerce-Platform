@@ -16,7 +16,7 @@ const ProductCard = ({ product,loading }) => {
 
   const addToCart=async(productId)=>{
     try {
-      const res = await axios.post(`http://localhost:8000/api/v1/cart/add`,{productId},{
+      const res = await axios.post(`https://full-stack-e-commerce-platform-hy20.onrender.com/cart/add`,{productId},{
         headers:{
           Authorization: `Bearer ${accessToken}`
         }

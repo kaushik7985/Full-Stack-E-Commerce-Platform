@@ -43,7 +43,7 @@ const [showPassword, setShowPassword] = useState(false);
     console.log(formData);
     try {
       setLoading(true)
-      const res=await axios.post(`http://localhost:8000/api/v1/user/login`,formData,{
+      const res=await axios.post(`https://full-stack-e-commerce-platform-hy20.onrender.com/user/login`,formData,{
         headers:{
           "Content-Type":"application/json"
         }

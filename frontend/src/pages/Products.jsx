@@ -29,7 +29,7 @@ const Products = () => {
     const getallproducts= async()=>{
         try {
             setLoading(true)
-            const res=await axios.get(`http://localhost:8000/api/v1/product/getallproducts`);
+            const res=await axios.get(`https://full-stack-e-commerce-platform-hy20.onrender.com/product/getallproducts`);
             if(res.data.success){
                 setAllProducts(res.data.products)
                 dispatch(setProducts(res.data.products))

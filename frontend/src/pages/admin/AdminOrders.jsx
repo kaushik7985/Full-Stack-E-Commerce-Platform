@@ -10,7 +10,7 @@ const AdminOrders = () => {
   useEffect(()=>{
     const fetchOrders = async ()=>{
       try {
-        const {data} = await axios.get("http://localhost:8000/api/v1/orders/all",{
+        const {data} = await axios.get("https://full-stack-e-commerce-platform-hy20.onrender.com/orders/all",{
           headers: {Authorization:`Bearer ${accessToken}`},
         });
         if(data.success) setorders(data.orders);

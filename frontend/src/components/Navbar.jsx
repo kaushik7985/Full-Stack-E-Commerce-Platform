@@ -19,7 +19,7 @@ const Navbar = () => {
 
   const logoutHandler=async()=>{
     try {
-      const res=await axios.post(`http://localhost:8000/api/v1/user/logout`,{},{
+      const res=await axios.post(`https://full-stack-e-commerce-platform-hy20.onrender.com/user/logout`,{},{
         headers:{
           Authorization:`Bearer ${accessToken}`
         }

@@ -57,7 +57,7 @@ const AddProduct = () => {
 
     try {
       setLoading(true)
-      const res = await axios.post(`http://localhost:8000/api/v1/product/add`,formData,{
+      const res = await axios.post(`https://full-stack-e-commerce-platform-hy20.onrender.com/product/add`,formData,{
         headers:{
           Authorization:`Bearer ${accessToken}`
         }

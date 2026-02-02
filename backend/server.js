@@ -14,7 +14,7 @@ const PORT=process.env.PORT||3000
 //middleware
 app.use(express.json())
 app.use(cors({
-    origin:'http://localhost:5173',
+    origin:'https://full-stack-e-commerce-platform-hy20.onrender.com',
     credentials:true
 }))
 
@@ -25,7 +25,7 @@ app.use('/api/v1/product',productRoute)
 app.use('/api/v1/cart',cartRoute)
 app.use('/api/v1/orders', orderRoute)
 
-//http://localhost:8000/api/v1/user/register
+//https://full-stack-e-commerce-platform-hy20.onrender.com/user/register
 
 app.use(express.static(path.join(_dirname, "frontend/dist")));
 // app.get("*", (_, res)=>{

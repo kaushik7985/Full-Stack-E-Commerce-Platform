@@ -9,7 +9,7 @@ const VerifyEmail = () => {
 
     const verifyEmail=async()=>{
         try {
-            const res=await axios.post(`http://localhost:8000/api/v1/user/verify`,{},{
+            const res=await axios.post(`https://full-stack-e-commerce-platform-hy20.onrender.com/user/verify`,{},{
                 headers:{
                     Authorization:`Bearer ${token}`
                 }
